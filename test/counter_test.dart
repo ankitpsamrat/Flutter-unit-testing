@@ -43,5 +43,14 @@ void main() {
 
       expect(val, -1);
     });
+
+    test('When counter is reset then the value of count should be 0', () {
+      final Counter counter = Counter();
+
+      counter.resetCounter();
+      final val = counter.count;
+
+      expect(val, 0);
+    });
   });
 }
